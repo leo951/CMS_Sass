@@ -1,0 +1,105 @@
+// // Color variable 
+// $blue : #609;
+// $grey : #C3C3C3;
+// $black : #313131;
+// $primaryColor:$grey;
+
+// // fonts variable
+// $mainFont: 'Raleway';
+
+// //Media queries
+// $screen-lg:"1200px";
+// $screen-md:"992px";
+// $screen-sm:"768px";
+// $screen-xs:"580px";
+
+// h1{
+//     color: $primaryColor;
+// }
+
+// // En CSS
+// .grid-item .title{
+//     font-size: 20px;
+// }
+
+// .grid-item{
+//     .title{
+//         font-size: 20px;
+//     }
+// }
+
+// .grid-item .title a:hover{
+//     color: $grey;
+// }
+
+// .grid-item{
+//     //.grid-item.is-animate
+//     &.is-animate{
+//         left: 100px;
+//     }
+//     .title{
+//         font-size: 20px;
+//         a{
+//             color: $black;
+//             &:hover{
+//                 color: $grey;
+//             }
+//             &:before{
+//                 content: " ";
+//                 // etc
+//             }
+//             @media(max-width:$screen-xs){
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+// }
+// @mixin absolutePosition($top,$left,$tx,$ty) {
+//     position: absolute;
+//     top: $top;
+//     left: $left;
+//     transform:translate($tx,$ty);
+// }
+
+// .grid-item{
+//     .btn {
+//         &--blue {
+//             background: blue;
+//         }
+//         &--grey {
+//             background: grey;
+//         }
+//         &--red {
+//             background: red;
+//         }
+//     }
+//     .text{
+//         &--center {
+//             text-align: center;
+//         }
+//         &--left {
+//             text-align: left;
+//         }
+//         &--right {
+//             text-align: right;
+//         }
+//     }
+// }
+
+//helpers
+@import './helpers/mixins';
+@import './helpers/reset';
+@import './helpers/variables';
+
+//base
+@import './base/base';
+@import 'base/font';
+
+//layout
+@import './theme/modal';
+@import './theme/button';
+@import './layout/header';
+@import './layout/footer';
+
+//pages
+@import './pages/homepage';

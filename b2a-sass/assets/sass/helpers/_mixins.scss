@@ -1,0 +1,44 @@
+@mixin displayFlex() {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+@mixin displayGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+@mixin positionAbsolute($top,$left,$tx,$ty){
+    position: absolute;
+	top: $top;
+	left: $left;
+	transform: translate($tx, $ty);
+	text-align: center;
+}
+@mixin positionFixed($top, $left, $width, $height, $z-index){
+    position: fixed;
+	top: $top;
+	left: $left;
+	width: $width;
+	height: $height;
+	background: whitesmoke;
+	z-index: $z-index;
+	/* opacity: 0.9; */
+	box-shadow: 3px 3px 5px #c3c3c3;
+	/* display: none; */
+	transition: 0.3s;
+}
+@mixin overlay (){
+    position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #8e8a8a8a;
+	z-index: 99998;
+    display: none;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}

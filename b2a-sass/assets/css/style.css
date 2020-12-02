@@ -1,0 +1,149 @@
+.header__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .header__main .header__logo img {
+    height: 100px;
+    width: 100px; }
+  .header__main .header__nav .nav__list {
+    display: flex;
+    list-style: none; }
+  .header__main .header__nav .nav__item {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .header__main .header__nav .nav__item a {
+    color: black;
+    text-decoration: none; }
+  .header__main .header-nav__wrapper {
+    padding: 10px 0;
+    cursor: pointer; }
+    .header__main .header-nav__wrapper .header-nav-burger {
+      width: 30px;
+      height: 2px;
+      background: black;
+      position: relative;
+      transition: 0.3s; }
+    .header__main .header-nav__wrapper .header-nav-burger.is-animate {
+      background-color: transparent; }
+    .header__main .header-nav__wrapper .header-nav-burger:before {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      background: black;
+      width: 30px;
+      height: 2px;
+      transition: transform 0.3s; }
+    .header__main .header-nav__wrapper .header-nav-burger.is-animate:before {
+      transform: rotate(45deg);
+      bottom: 0px;
+      transition: transform 0.3s; }
+    .header__main .header-nav__wrapper .header-nav-burger:after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      background: black;
+      width: 30px;
+      height: 2px;
+      transition: transform 0.3s; }
+    .header__main .header-nav__wrapper .header-nav-burger.is-animate:after {
+      transform: rotate(-45deg);
+      top: 0px;
+      transition: transform 0.3s; }
+
+.nav--responsive {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: whitesmoke;
+  z-index: 99999;
+  /* opacity: 0.9; */
+  box-shadow: 3px 3px 5px #c3c3c3;
+  /* display: none; */
+  transition: 0.3s; }
+
+.nav--responsive.is-open {
+  left: 0%;
+  transition: 0.3s; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #8e8a8a8a;
+  z-index: 99998;
+  display: none;
+  opacity: 0;
+  transition: 0.3s ease-in; }
+
+.overlay.is-open {
+  opacity: 1;
+  transition: 0.3s ease-in; }
+
+.overflow {
+  overflow: hidden; }
+
+@media (max-width: 768px) {
+  .header__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px; }
+    .header__main .header__logo {
+      text-align: center; }
+    .header__main .header__nav .nav__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0;
+      list-style: none; } }
+
+footer {
+  background: #3d3d3d;
+  color: whitesmoke;
+  text-align: center;
+  padding: 30px; }
+
+.hero__home {
+  background-image: url("/assets/img/loup_de_wallstreet.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 60px); }
+  .hero__home .hero__content p {
+    color: whitesmoke; }
+  .hero__home .hero__content h1 {
+    color: violet; }
+
+.hero__home .hero__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  padding: 30px; }
+  .grid .moovie__item img {
+    max-width: 100%; }
+
+.about__home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .about__home .left-part {
+    color: tomato; }
+  .about__home .right-part {
+    width: 50%;
+    padding: 30px; }
+  .about__home .right-part img {
+    max-width: 100%; }
