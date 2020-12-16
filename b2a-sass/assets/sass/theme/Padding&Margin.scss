@@ -1,0 +1,16 @@
+@for $i from 1 through 10 {
+    .Mg-#{$i} {
+        margin: 0.5rem * $i;
+    } 
+    @for $j from 1 through 10 {
+        .Pad-#{$j} {
+            // Si $color est égale à 'orange'
+            @if ($i > 6) {
+                // Alors shadow vaut :
+                padding: 2rem
+            } @else {
+                padding: 0.5rem * $j;
+            }
+        }
+    }
+};
