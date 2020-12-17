@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@for $i from 1 through 3 {
+    .H-#{$i} {
+        
+        @if ($i == 2){
+           font-size: 1.25rem * $i - 1rem;
+           line-height: 2rem ;
+
+        } @else if ($i == 3){
+            font-size : 2.5rem;
+            line-height: 2.25rem;
+    }
+        
+        @else {
+           font-size: 1.25rem *$i;
+           line-height: 1.75rem *$i;
+           
+        } 
+    } 
+ };
+
+
+ @for $i from 1 through 5 {
+    .P-#{$i} {
