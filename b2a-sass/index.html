@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base/theme/_pages.scss">
     <title>CMS</title>
     <style>
-        p.modif-text {
+        
+        body {
+            
+            background-color: white;
             font-family: Roboto;
-            font-style: italic;
-            color: rgb(3, 1, 5);
-            text-align: center;
-            font-size: larger;
-            background-color: rgb(123, 13, 214);
+            
         }
-        t {
-            font-family: Roboto;
-            font-size: 16px;
-            color:red;
-            background-color: rgb(87, 63, 63);
-        }
-    
+
+    #field1 {
+        width: 25%;
+        height: 780px;
+        background-color: darkblue;
+        margin-bottom: -52.5%;
+    }
+#field2 {
+width: 25%;
+margin-left: 74%;
+height: 780px;
+background-color: red;
+font-family: Roboto;
+}
     </style>
-</head>
+</head> 
 
 <body>
-    <p class= "modif-text">CMS</p>
-    <t>Bienvenue </t>
-
-  
+    
+    
+    <fieldset id="field1">
+    <h1>CMS</h1> 
+</fieldset>
+  <fieldset id="field2">hi</fieldset>
 </body>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="/assets/js/index.js"></script>
